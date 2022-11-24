@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Rubik+Burned&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: red 
+}
+body{
+    background: rgb(210, 238, 240)
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    
+    background: rgb(30, 119, 126);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    transition: 0.5s;
+
+    
+}
+.nav .logo-name #customize-logo{
+    color: rgb(48, 43, 43);
+}
+nav .logo-name h1{
+    padding-top: 11.8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8vmin;
+}
+nav .logo-name img{
+    width: 20%;
+    height: 20%;
+
+}
+.nav-links ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4% 0;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    font-size: 3.3vmin;
+    padding: 0 20px;
+}
+.nav-links ul .border-line{
+    display: none;
+    height: 1px;
+    width: 100%;
+    background: rgb(210, 238, 240);
+    margin-bottom: 5%;
+}
+.nav .fa-bars{
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(210, 238, 240);
+    font-family: 'Poppins', sans-serif;
+}
+a:is(:active, :link, :visited).active{
+    border-bottom: 2px solid rgb(210, 238, 240);
+    border-top: 2px solid rgb(210, 238, 240);
+    transition: all 0.5s ease-in;
+}
+.login{
+        display:none;
+        width: 100%;
+}
+.nav-links .ul .border div{
+    display: none;
+}
+.images{
+    transition: 0.5s;
+}
+.fa-bars{
+    font-size: 6vmin;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ABOUT US ITEMS */
+
+.about-us-items{
+    justify-content: center;
+    display: flex;
+    gap: 2%;
+    margin: 3% 0 5% 0;
+    text-align: center;
+    flex-wrap: wrap;
+
+    
+}
+.about-us-items > div{
+width: 30%;
+background-color: rgb(182, 225, 228);
+border-radius: 4%;
+box-shadow: 2px 3px 4px black;
+
+
+}
+.about-us-items > div p{
+margin-bottom: 5%; 
+
+}
+
+.about-us-items > div button{
+    background: none;
+    border: none;
+    margin-top: 4%;
+}
+
+.about-us-items > div button .fa-solid{
+    font-size: 6vmin;
+}
+
+.about-us-items > div:nth-child(4){
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+/* footer */
+.social{
+    margin-left: -4%;
+}
+.social .fa-brands{
+    padding-left: 6px;
+    color: rgb(210, 238, 240);
+    font-size: 3vmin;
+}
+footer{
+    display: flex;
+    margin-top: 10px;
+    background: rgb(30, 119, 126);
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.special-footer-1{
+    line-height: 2.0;
+}
+
+.special-footer-3{
+    width: 100%;
+    background: rgb(7, 61, 65);
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.special-footer-3 p{
+    font-size: 3vmin;
+    text-align: center;
+    color: rgb(210, 238, 240);
+}
+.special-footer-1 p, .special-footer-2 p, .contact p{
+        
+        font-size: 2.3vmin;
+    }
+.special-footer-1 p:hover{
+    text-decoration: underline;
+}
+.special-footer-2 p:hover{
+    text-decoration: underline;
+}
+
+.special-footer-1 p .fa-solid{
+    margin-right: 3%;
+}
+.special-footer-1 p .fa-light{
+    margin-right: 3%;
+}
+
+.contact p .fa-solid{
+    margin-right: 3%;
+}
+
+
+.contact p:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.social-footer{
+    display: none;
+}
+.contact{
+    line-height: 2.0;
+}
+.contact span{
+    font-style: italic;
+}
+footer div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+section img:hover{
+    transform: scale(1.1);
+}
+.fa-arrow-up{
+    font-size: 4vmin;
+    color: black;
+    margin-left: 100%;
+    margin-top: -15%;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+/* Media Queries */
+
+
+/* Mobile */
+@media screen and (max-width:480px){
+    /* navbar */
+nav{
+    background-color: rgb(30, 119, 126);
+    height: auto;
+    transition: 0.5s;
+
+}
+    
+    
+.nav-links{
+
+        
+        
+        margin-left: -20%;
+        margin-top: 20%;
+        width: 100%;
+        
+    }
+    
+
+.nav-links ul{
+    display: none;
+    flex-direction: column;
+    
+    
+    
+}
+.nav-links ul li{
+    padding-bottom: 20%;
+}
+.nav-links ul li a{
+    color: white;
+    font-size: 5vmin;
+}
+.nav-links ul .border-line{
+    display: block;
+}
+.login{
+    display: block;
+    padding: 7px 0;
+    margin-left:0;
+    border: none;
+}
+.login:active{
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+.login .fa-facebook-f{
+    font-size: 4vmin;
+    margin-left: 3%;
+    color: blue;
+}
+.login .fa-user{
+    font-size: 4vmin;
+}
+
+nav .logo-name h1 a{
+    font-size: 6vmin;
+    padding-bottom: 0;
+    
+}
+
+.nav .fa-bars{
+    color: white;
+    display: block;
+    margin-right: 20px;
+    height: 0;
+    padding-top:5%;
+    font-size: 9vmin;
+}
+a:is(:active, :link, :visited).active{
+    border-top:none
+}
+
+.toggle-nav{
+    height: 80vh;
+    
+}
+
+
+/* body */
+.about-us-items > div{
+    width: 80%;
+    margin-top: 4%;
+}
+.about-us-items > div:nth-of-type(4){
+    margin-top: 4%;
+}
+
+
+/* footer */
+footer{
+        
+    flex-direction: column;
+    
+}
+.social{
+    display: none   ;
+}
+.social-footer{
+    margin-top: 2%;
+    display: block;
+    text-align: center;
+
+}
+.social-footer .fa-brands{
+    margin-left: 5%;
+    font-size: 3vmin;
+
+}
+
+
+.special-footer-1 p, .special-footer-2 p, .contact p{
+    
+    font-size: 2vmin;
+}
+.contact{
+    margin-top: 7%;
+    margin-bottom: 20%;
+    width: 90%;
+}
+#talk-on{
+    display: none;
+}
+.special-footer-1{
+    margin-top: 7%;
+    width: 90%;
+}
+.special-footer-2{
+    margin-top: 7%;
+    width: 90%;
+}
+.special-footer-3 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+.special-footer-3 p{
+    font-size: 4vmin;
+    
+}
+.special-footer-1 h3, .special-footer-2 h3, .contact h3{
+    font-size: 2.4vmin;
+}
+}

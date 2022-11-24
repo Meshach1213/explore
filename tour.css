@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Poppins:ital,wght@0,100;0,500;0,600;1,100;1,500&family=Rubik+Burned&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav bars */
+nav{
+    
+    background: rgb(30, 119, 126);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.nav .logo-name #customize-logo{
+    color: rgb(48, 43, 43);
+    
+}
+
+nav .logo-name h1{
+    padding-top: 11.8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8vmin;
+}
+
+nav .logo-name img{
+    width: 20%;
+    height: 20%;
+    
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4% 0;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    font-size: 3.3vmin;
+    padding: 0 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(210, 238, 240);
+    font-family: 'Poppins', sans-serif;
+}
+
+a:is(:active, :link, :visited).active{
+    border-bottom: 2px solid rgb(210, 238, 240);
+    border-top: 2px solid rgb(210, 238, 240);
+    transition: all 0.5s ease-in;
+}
+.nav-links ul .border-line{
+    display: none;
+    height: 1px;
+    width: 100%;
+    background: rgb(210, 238, 240);
+    margin-bottom: 5%;
+}
+
+.login{
+    display:none;
+    width: 100%;
+}
+.nav-links .ul .border div{
+    display: none;
+}
+.images{
+    transition: 0.5s;
+}
+.fa-bars{
+    font-size: 6vmin;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+.tour{
+    background-color: rgb(30, 119, 126);
+    margin-top: -5%;
+    
+    
+}
+
+
+.tour .buttons{
+    margin-top: 5.4%;
+    display: flex;
+    justify-content: center;
+}
+.tour .buttons button{
+    width: 10%;
+    padding: 5px 0;
+    margin: 4% 3% 0 3%;
+    border: 1px solid white;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+
+    
+
+}
+.tour .buttons button a{
+    color: black;
+}
+.tour .buttons button:hover{
+    background-color: inherit;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.tour .buttons button .fa-brands{
+color: black;
+margin-right: 2%;
+font-size: 2.5vmin;
+}
+.tour .horizontal-line{
+    background: rgb(210, 238, 240);
+    width: 100%;
+    height: 2px;
+    margin-top: 4%;
+    
+}
+.tour .hottest-tour{
+    display: flex;
+    justify-content: center;  
+    
+}
+.tour .hottest-tour .tours{
+    text-align: center;
+    margin-top: 2%;
+}
+.tours-container{
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    margin-top: 3%;
+}
+.tour-desc-fees .header{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+.tour-desc-fees .header h2{
+    font-size: 3.6vmin;
+    padding: 4px 0;
+}
+.tour-desc-fees .desc{
+    margin-top: 2%;
+}
+.tour-desc-fees .desc h3{
+    font-size: 3vmin;
+    color: rgb(210, 238, 240)
+}
+
+.tour-desc-fees .fees{
+    margin-top: 2%;
+    
+}
+.tour-desc-fees .book-flight{
+    margin-top: 2%;
+}
+.tour-desc-fees .book-flight button{
+    background-color: white;
+    width: 100%;
+    border: none;
+    font-size: 3vmin;
+    padding: 4px 0;
+    cursor: pointer;
+}
+.tour-desc-fees .book-flight button:hover{
+    transform: scale(0.7);
+    background-color: none;
+    color: black;
+    transition: 0.5s;
+}
+.tour .travel-with-us{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: whitesmoke;
+    box-shadow: 4px 0 4px whitesmoke;
+}
+.tour .travel-with-us .travel .header h2{
+    font-size: 4vmin;
+    color: rgb(7, 61, 65);
+    padding-top: 2%;
+    margin-left: 2%;
+}
+.tour .travel-with-us .travel .horizontal-line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(3, 29, 31);
+}
+.tour .travel-with-us .travel .content-container{
+    margin-top: 2%;
+}
+.tour .travel-with-us .travel .content-container .content p.readmore{
+    text-decoration: underline;
+    color: rgb(3, 29, 31);
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.tour .travel-with-us .travel .content-container .content p.header{
+    color: rgb(3, 29, 31);
+    margin-bottom: 2%;
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.tour .travel-with-us .image img{
+    width: 100%;
+    height: 100%
+}
+.tour .travel-with-us .image{
+    margin: 0 1.4%;
+}
+
+.tour .travel-with-us .travel .reveal-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.tour .travel-with-us .travel .reveal-btn .btn{
+    background: rgb(65, 171, 180);
+}
+
+.tour .tour-desc-fees{
+    width: 25%;
+}
+.tour .tour-desc-fees .image{
+    width: 100%;
+    height: 60%;
+}
+.tour .tour-desc-fees .image img{
+    width: 100%;
+    height: 100%;
+}
+.tour .travel-with-us .content-container{
+    display: flex;
+    gap: 2%;
+    
+}
+
+
+.tour .travel-with-us .travel .content-container .content p.content-paragraph{
+    line-height: 2.0;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-left: 10%;
+}
+.content-container .content .paragraph{
+    display: none;
+    text-align: center;
+}
+
+
+
+.offers-bonus{
+    background-color: whitesmoke;
+    display: flex;
+    gap: 2%;
+    text-align: center;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+
+}
+.offers-bonus .offers{
+    background-color: rgb(7, 61, 65);
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.offers-bonus .bonus{
+    background-color: rgb(145, 226, 233);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    gap: 2%;
+    color: rgb(3, 29, 31);
+    
+    
+}
+.offers-bonus .bonus .image{
+    width: 10%;
+}
+.offers-bonus .bonus .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 40%;
+}
+.offers-bonus .bonus:hover{
+    background-color:rgb(210, 238, 240);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.offers-bonus .bonus .save-upto h1{
+    font-family: 'Bebas Neue', cursive;
+}
+.offers-bonus .bonus .bookfree h3{
+    font-style: italic;
+}
+
+.flight-miscelleneous{
+    background-color: whitesmoke;
+    display: flex;
+    gap: 1.4%;;
+    
+    
+}
+.flight-miscelleneous .miscelleneous h1{
+margin-top: 5%;
+}
+
+.flight-miscelleneous .miscelleneous p{
+    margin: 6% 0;
+    line-height: 1.5;
+}
+.flight-miscelleneous .miscelleneous .readmore{
+    color: rgb(30, 119, 126)
+}
+
+.flight-miscelleneous .miscelleneous h1::before{
+    content: "";
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+/* footer */
+.social{
+    margin-left: -4%;
+}
+.social .fa-brands{
+    padding-left: 6px;
+    color: rgb(210, 238, 240);
+    font-size: 3vmin;
+}
+footer{
+    display: flex;
+    margin-top: 10px;
+    background: rgb(30, 119, 126);
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.special-footer-1{
+    line-height: 2.0;
+}
+
+.special-footer-3{
+    width: 100%;
+    background: rgb(7, 61, 65);
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.special-footer-3 p{
+    font-size: 3vmin;
+    text-align: center;
+    color: rgb(210, 238, 240);
+}
+.special-footer-1 p, .special-footer-2 p, .contact p{
+        
+        font-size: 2.3vmin;
+    }
+.special-footer-1 p:hover{
+    text-decoration: underline;
+}
+.special-footer-2 p:hover{
+    text-decoration: underline;
+}
+
+.special-footer-1 p .fa-solid{
+    margin-right: 3%;
+}
+.special-footer-1 p .fa-light{
+    margin-right: 3%;
+}
+
+.contact p .fa-solid{
+    margin-right: 3%;
+}
+
+.contact p:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.social-footer{
+    display: none;
+}
+.contact{
+    line-height: 2.0;
+}
+.contact span{
+    font-style: italic;
+}
+footer div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+section img:hover{
+    transform: scale(1.1);
+}
+.fa-arrow-up{
+    font-size: 4vmin;
+    color: black;
+    margin-left: 100%;
+    margin-top: -15%;
+    cursor: pointer;
+    
+}
+
+
+/* Media Queries */
+
+
+/* Mobile */
+@media screen and (max-width:480px){
+    /* navbar */
+nav{
+    background-color: rgb(30, 119, 126);
+    height: auto;
+    transition: 0.5s;
+
+}
+    
+    
+.nav-links{
+
+        
+        
+        margin-left: -20%;
+        margin-top: 20%;
+        width: 100%;
+        
+    }
+    
+
+.nav-links ul{
+    display: none;
+    flex-direction: column;
+    
+    
+    
+}
+.nav-links ul li{
+    padding-bottom: 20%;
+}
+.nav-links ul li a{
+    color: white;
+    font-size: 5vmin;
+}
+.nav-links ul .border-line{
+    display: block;
+}
+.login{
+    display: block;
+    padding: 7px 0;
+    margin-left:0;
+    border: none;
+}
+.login:active{
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+.login .fa-facebook-f{
+    font-size: 4vmin;
+    margin-left: 3%;
+    color: blue;
+}
+.login .fa-user{
+    font-size: 4vmin;
+}
+
+nav .logo-name h1 a{
+    font-size: 6vmin;
+    padding-bottom: 0;
+    
+}
+
+.fa-bars{
+    color: white;
+    display: block;
+    margin-right: 20px;
+    height: 0;
+    padding-top:5%;
+    font-size: 9vmin;
+}
+a:is(:active, :link, :visited).active{
+    border-top:none
+}
+
+.toggle-nav{
+    height: 80vh;
+    
+}
+
+.tour{
+    background-color: rgb(30, 119, 126);
+    margin-top: none
+    
+    
+}
+.tour-desc-fees{
+    margin: 3% 0;
+}
+.tour-desc-fees .desc h3{
+    text-align: center;
+}
+.tour-desc-fees .desc p{
+    text-align: center;
+}
+.tour-desc-fees .fees h3{
+    text-align: center;
+}
+.tour-desc-fees .book-flight button{
+    width: 40%;
+}
+.tour-desc-fees .book-flight{
+    text-align: center;
+}
+
+.tours-container{
+    flex-direction: column;
+}
+.tour .travel-with-us .travel .content-container .content{
+   width: 40%;
+   margin: 2% 0 
+}
+
+.tour .travel-with-us .travel .content-container .content p.header{
+    font-size: 4vmin;
+}
+.tour .travel-with-us .travel .content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.save-upto h1{
+    font-size: 4vmin;
+}
+
+.flight-miscelleneous{
+    flex-direction: column;
+}
+
+.tour{
+    margin-top: 0;
+}
+.tour .tour-desc-fees{
+    width: 100%;
+}
+
+.tour .buttons button{
+    width: 15%;
+}
+
+
+.tour .buttons button:hover{
+    background-color: white;
+    border: 1px solid white;
+    
+}
+.tour .buttons button:focus{
+    background-color: inherit;
+    border: 1px solid white;
+}
+.offers-bonus .bonus .image{
+    display: none
+}
+
+/* footer */
+footer{
+        
+    flex-direction: column;
+    
+}
+.social{
+    display: none   ;
+}
+.social-footer{
+    margin-top: 2%;
+    display: block;
+    text-align: center;
+
+}
+.social-footer .fa-brands{
+    margin-left: 5%;
+    font-size: 3vmin;
+
+}
+
+
+.special-footer-1 p, .special-footer-2 p, .contact p{
+    
+    font-size: 2vmin;
+}
+.contact{
+    margin-top: 7%;
+    margin-bottom: 20%;
+    width: 90%;
+}
+#talk-on{
+    display: none;
+}
+.special-footer-1{
+    margin-top: 7%;
+    width: 90%;
+}
+.special-footer-2{
+    margin-top: 7%;
+    width: 90%;
+}
+.special-footer-3 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+.special-footer-3 p{
+    font-size: 4vmin;
+    
+}
+.special-footer-1 h3, .special-footer-2 h3, .contact h3{
+    font-size: 2.4vmin;
+}
+}
+
