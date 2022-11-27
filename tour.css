@@ -579,7 +579,10 @@ a:is(:active, :link, :visited).active{
 }
 
 .tour .buttons button{
-    width: 15%;
+    width: auto
+}
+.tour .buttons{
+    flex-wrap: wrap;
 }
 
 
