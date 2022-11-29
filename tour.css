@@ -98,7 +98,7 @@ a:is(:active, :link, :visited).active{
     justify-content: center;
 }
 .tour .buttons button{
-    width: 10%;
+    width:auto;
     padding: 5px 0;
     margin: 4% 3% 0 3%;
     border: 1px solid white;
